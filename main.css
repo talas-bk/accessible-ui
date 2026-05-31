@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+
+}
+
+:root {
+    --accent-button-backg:#0000;
+    --invalid-input:rgb(211, 23, 23);
+    --progress-box:rgba(146, 144, 144, 0.186);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.conteiner-form {
+    width: 500px;
+    padding: 30px 30px;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: 0 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.20) ;
+}
+
+.conteiner-contents {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.form {
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-bottom: 10px;
+    position: relative;
+
+}
+
+input {
+    height: 35px;
+    padding-left: 6px;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid;
+}
+
+
+input:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.30) ;
+}
+#email::placeholder {
+    color: var(--invalid-input);
+}
+
+#email {
+   border-color: var(--invalid-input);
+}
+
+
+.icon-eye{
+   position: absolute;
+   top:calc(50% + 2px);
+   right: 5px;
+}
+
+.button-update > button{
+    width: 90%;
+    height: 35px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 7px;
+    text-align: center;
+}
+
+.button-update > button:hover {
+    background-color: #373333;
+}
+
+.email-taken {
+    font-size: 0.7rem;
+    color: var(--invalid-input);
+    letter-spacing: 0.03rem;
+}
+
+.progress{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.progress > span{
+    width: 110px;
+    height: 110px;
+    border: 1px solid black;
+    border-radius: 50%;
+    position: relative;
+    background: conic-gradient(white 0% 50% , #000 70% 0%);
+}
+
+.progress > span::before {
+    content: '';
+    position: absolute;
+    inset:5px;
+    border-radius: 50%;
+    background: white;
+    border: 1px solid black;
+}
+
+
+.progress > span::after {
+    position: absolute;
+    content: '65%';
+    font-size: 18px;
+    top: 43%;
+    left:38%;
+}
+
+
+.progress-content {
+    width: 200px;
+    height: 170px;
+    padding: 10px 0 0 14px;
+    background: var(--progress-box);
+    border-radius: 10px;
+}
+
+ul > li {
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+
+li > s {
+    color: rgba(104, 106, 107, 0.585);
+}
+

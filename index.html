@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="fontello.css">
+    <title>Accessible Form</title>
+</head>
+<body>
+
+    <main>
+         <section class="conteiner-form">
+            <div class="conteiner-contents">
+                 <form autocomplete="on">
+                    <div class="form">
+                     <label for="name">Full Name</label>
+                     <input type="text" id="name" placeholder="What should we call you?" required>
+                     </div>
+
+                    <div class="form">
+                     <label for="email">Email</label>
+                     <input type="text" id="email" placeholder="john@mail.com" required>
+                     <span class="email-taken">Email is already taken</span>
+                     </div>
+                     
+                    <div class="form">
+                     <label for="password">Enter Password</label>
+                       <input type="password" id="password" placeholder="xxxxxx" required>
+                       <i class="icon-eye"></i>
+                     </div>
+
+                      <div class="form">
+                        <label for="confirm">Confirm Password</label>
+                       <input type="password" id="confirm" placeholder="xxxxxx " required> 
+                       <i class="icon-eye"></i>
+                     </div>
+
+                     <div class="button-update">
+                        <button type="submit">Update Profile</button>
+                     </div>
+                 </form>
+
+                 <div class="progress">
+                    <span></span>
+                    <p>Profile Completeness</p>
+
+                    <div class="progress-content">
+                        <ul>
+                            <li><s>Create Account</s></li>
+                            <li><s>Update Roadmap Progress</s></li>
+                            <li><s>Setup Public Profile</s></li>
+                            <li>Complete your first project</li>
+                            <li>Invite your Friends</li>
+                        </ul>
+                    </div>
+                 </div>
+            </div>
+         </section>
+    </main>
+    
+</body>
+</html>
